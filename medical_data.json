@@ -1,0 +1,520 @@
+{
+  "symptoms": {
+
+    "fever": {
+      "keywords": [
+        "fever",
+        "high temperature",
+        "body heat",
+        "temperature"
+      ],
+      "description": "Fever may indicate a viral or bacterial infection.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Stay hydrated, rest properly, and monitor your temperature regularly.",
+      "follow_up": [
+        "How long have you had the fever?",
+        "Do you also have chills or cough?"
+      ],
+      "possible_conditions": [
+        "Flu",
+        "Viral infection",
+        "COVID-19"
+      ]
+    },
+
+    "cough": {
+      "keywords": [
+        "cough",
+        "dry cough",
+        "wet cough",
+        "coughing"
+      ],
+      "description": "Coughing may result from infection, allergies, or throat irritation.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Drink warm fluids and avoid smoke exposure.",
+      "follow_up": [
+        "Is the cough dry or productive?",
+        "How long have you been coughing?"
+      ],
+      "possible_conditions": [
+        "Cold",
+        "Flu",
+        "Bronchitis"
+      ]
+    },
+
+    "cold": {
+      "keywords": [
+        "cold",
+        "common cold",
+        "runny nose",
+        "blocked nose"
+      ],
+      "description": "Common cold is usually caused by a viral infection.",
+      "severity": "low",
+      "score": 1,
+      "emergency": false,
+      "advice": "Rest well, stay hydrated, and consume warm fluids.",
+      "follow_up": [
+        "Do you also have sneezing or sore throat?"
+      ],
+      "possible_conditions": [
+        "Common cold",
+        "Seasonal allergy"
+      ]
+    },
+
+    "headache": {
+      "keywords": [
+        "headache",
+        "migraine",
+        "head pain"
+      ],
+      "description": "Headaches can occur due to stress, dehydration, fatigue, or infections.",
+      "severity": "low",
+      "score": 1,
+      "emergency": false,
+      "advice": "Rest in a quiet place and stay hydrated.",
+      "follow_up": [
+        "Is the headache severe or mild?",
+        "Do you also feel dizziness?"
+      ],
+      "possible_conditions": [
+        "Migraine",
+        "Stress",
+        "Dehydration"
+      ]
+    },
+
+    "fatigue": {
+      "keywords": [
+        "fatigue",
+        "tired",
+        "weakness",
+        "low energy"
+      ],
+      "description": "Fatigue may result from stress, poor sleep, or illness.",
+      "severity": "low",
+      "score": 1,
+      "emergency": false,
+      "advice": "Ensure proper rest, hydration, and balanced nutrition.",
+      "follow_up": [
+        "How long have you been feeling tired?"
+      ],
+      "possible_conditions": [
+        "Stress",
+        "Anemia",
+        "Sleep deprivation"
+      ]
+    },
+
+    "sore throat": {
+      "keywords": [
+        "sore throat",
+        "throat pain",
+        "pain while swallowing"
+      ],
+      "description": "Sore throat is commonly caused by viral or bacterial infections.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Drink warm fluids and avoid cold beverages.",
+      "follow_up": [
+        "Do you also have fever or cough?"
+      ],
+      "possible_conditions": [
+        "Cold",
+        "Flu",
+        "Throat infection"
+      ]
+    },
+
+    "nausea": {
+      "keywords": [
+        "nausea",
+        "feeling sick",
+        "queasy"
+      ],
+      "description": "Nausea may occur due to digestive issues or infections.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Eat light foods and drink fluids slowly.",
+      "follow_up": [
+        "Have you vomited recently?"
+      ],
+      "possible_conditions": [
+        "Food poisoning",
+        "Gastritis"
+      ]
+    },
+
+    "vomiting": {
+      "keywords": [
+        "vomiting",
+        "throwing up",
+        "vomit"
+      ],
+      "description": "Vomiting can occur due to infections, food poisoning, or digestive issues.",
+      "severity": "medium",
+      "score": 3,
+      "emergency": false,
+      "advice": "Drink small amounts of water frequently to avoid dehydration.",
+      "follow_up": [
+        "How many times have you vomited today?"
+      ],
+      "possible_conditions": [
+        "Food poisoning",
+        "Stomach infection"
+      ]
+    },
+
+    "diarrhea": {
+      "keywords": [
+        "diarrhea",
+        "loose motion",
+        "watery stool"
+      ],
+      "description": "Diarrhea is commonly caused by infection or food contamination.",
+      "severity": "medium",
+      "score": 3,
+      "emergency": false,
+      "advice": "Stay hydrated and avoid oily foods.",
+      "follow_up": [
+        "Are you experiencing dehydration or weakness?"
+      ],
+      "possible_conditions": [
+        "Food poisoning",
+        "Stomach infection"
+      ]
+    },
+
+    "stomach pain": {
+      "keywords": [
+        "stomach pain",
+        "abdominal pain",
+        "stomach ache"
+      ],
+      "description": "Stomach pain may result from indigestion, infection, or digestive issues.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Eat light meals and avoid spicy foods.",
+      "follow_up": [
+        "Is the pain sharp or dull?"
+      ],
+      "possible_conditions": [
+        "Indigestion",
+        "Gastritis"
+      ]
+    },
+
+    "chest pain": {
+      "keywords": [
+        "chest pain",
+        "tight chest",
+        "chest pressure"
+      ],
+      "description": "Chest pain may indicate a serious cardiovascular condition.",
+      "severity": "high",
+      "score": 5,
+      "emergency": true,
+      "advice": "Seek immediate medical attention.",
+      "follow_up": [
+        "Does the pain spread to your arm or jaw?"
+      ],
+      "possible_conditions": [
+        "Heart attack",
+        "Angina"
+      ]
+    },
+
+    "shortness of breath": {
+      "keywords": [
+        "shortness of breath",
+        "breathing difficulty",
+        "breathless",
+        "can't breathe"
+      ],
+      "description": "Difficulty breathing may indicate respiratory or cardiac problems.",
+      "severity": "high",
+      "score": 5,
+      "emergency": true,
+      "advice": "Seek urgent medical care immediately.",
+      "follow_up": [
+        "Did the breathing issue start suddenly?"
+      ],
+      "possible_conditions": [
+        "Asthma",
+        "COVID-19",
+        "Heart condition"
+      ]
+    },
+
+    "dizziness": {
+      "keywords": [
+        "dizziness",
+        "lightheaded",
+        "feeling faint"
+      ],
+      "description": "Dizziness may result from dehydration, low blood pressure, or stress.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Sit down, rest, and drink fluids.",
+      "follow_up": [
+        "Did you faint or lose balance?"
+      ],
+      "possible_conditions": [
+        "Low blood pressure",
+        "Dehydration"
+      ]
+    },
+
+    "joint pain": {
+      "keywords": [
+        "joint pain",
+        "knee pain",
+        "arthritis"
+      ],
+      "description": "Joint pain may occur due to inflammation or injury.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Rest the affected area and apply warm compresses.",
+      "follow_up": [
+        "Is there swelling around the joint?"
+      ],
+      "possible_conditions": [
+        "Arthritis",
+        "Inflammation"
+      ]
+    },
+
+    "back pain": {
+      "keywords": [
+        "back pain",
+        "lower back pain",
+        "spine pain"
+      ],
+      "description": "Back pain commonly results from strain, posture issues, or muscle injury.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Avoid heavy lifting and maintain good posture.",
+      "follow_up": [
+        "Did the pain begin after physical activity?"
+      ],
+      "possible_conditions": [
+        "Muscle strain",
+        "Posture issue"
+      ]
+    },
+
+    "runny nose": {
+      "keywords": [
+        "runny nose",
+        "nasal discharge",
+        "dripping nose"
+      ],
+      "description": "Runny nose is common in colds and allergies.",
+      "severity": "low",
+      "score": 1,
+      "emergency": false,
+      "advice": "Rest well and stay hydrated.",
+      "follow_up": [
+        "Do you also have sneezing or fever?"
+      ],
+      "possible_conditions": [
+        "Cold",
+        "Allergy"
+      ]
+    },
+
+    "palpitations": {
+      "keywords": [
+        "palpitations",
+        "fast heartbeat",
+        "racing heart"
+      ],
+      "description": "Palpitations may occur due to stress, anxiety, or heart rhythm issues.",
+      "severity": "high",
+      "score": 4,
+      "emergency": true,
+      "advice": "Seek medical advice if symptoms are frequent or severe.",
+      "follow_up": [
+        "Do you also feel chest pain or dizziness?"
+      ],
+      "possible_conditions": [
+        "Anxiety",
+        "Heart rhythm disorder"
+      ]
+    },
+
+    "anxiety": {
+      "keywords": [
+        "anxiety",
+        "panic",
+        "nervous",
+        "stress"
+      ],
+      "description": "Anxiety can cause restlessness, rapid heartbeat, and excessive worry.",
+      "severity": "medium",
+      "score": 2,
+      "emergency": false,
+      "advice": "Practice relaxation techniques and maintain regular sleep.",
+      "follow_up": [
+        "Are you experiencing sleep problems?"
+      ],
+      "possible_conditions": [
+        "Anxiety disorder",
+        "Stress"
+      ]
+    },
+
+    "depression": {
+      "keywords": [
+        "depression",
+        "sad",
+        "low mood",
+        "hopeless"
+      ],
+      "description": "Depression may cause persistent sadness and loss of interest.",
+      "severity": "high",
+      "score": 4,
+      "emergency": false,
+      "advice": "Seek support from a mental health professional.",
+      "follow_up": [
+        "Have you been feeling this way for more than two weeks?"
+      ],
+      "possible_conditions": [
+        "Depression",
+        "Mood disorder"
+      ]
+    },
+
+    "blurred vision": {
+      "keywords": [
+        "blurred vision",
+        "blurry eyes",
+        "vision problem"
+      ],
+      "description": "Blurred vision may result from eye strain or underlying medical conditions.",
+      "severity": "high",
+      "score": 4,
+      "emergency": true,
+      "advice": "Consult a doctor if vision changes are sudden or severe.",
+      "follow_up": [
+        "Did the blurred vision begin suddenly?"
+      ],
+      "possible_conditions": [
+        "Eye strain",
+        "Diabetes",
+        "Neurological issue"
+      ]
+    }
+  },
+
+  "symptom_combinations": [
+
+    {
+      "symptoms": [
+        "fever",
+        "cough"
+      ],
+      "condition": "Possible viral infection or flu",
+      "severity": "medium",
+      "score_bonus": 2,
+      "emergency": false,
+      "advice": "Monitor your temperature, stay hydrated, and rest properly."
+    },
+
+    {
+      "symptoms": [
+        "fever",
+        "sore throat"
+      ],
+      "condition": "Possible throat infection or flu",
+      "severity": "medium",
+      "score_bonus": 2,
+      "emergency": false,
+      "advice": "Drink warm fluids and monitor worsening symptoms."
+    },
+
+    {
+      "symptoms": [
+        "chest pain",
+        "shortness of breath"
+      ],
+      "condition": "Possible cardiac or respiratory emergency",
+      "severity": "high",
+      "score_bonus": 5,
+      "emergency": true,
+      "advice": "Seek emergency medical attention immediately."
+    },
+
+    {
+      "symptoms": [
+        "nausea",
+        "vomiting"
+      ],
+      "condition": "Possible food poisoning or stomach infection",
+      "severity": "medium",
+      "score_bonus": 2,
+      "emergency": false,
+      "advice": "Drink fluids frequently and avoid heavy meals."
+    },
+
+    {
+      "symptoms": [
+        "vomiting",
+        "diarrhea"
+      ],
+      "condition": "High risk of dehydration",
+      "severity": "medium",
+      "score_bonus": 3,
+      "emergency": false,
+      "advice": "Increase fluid intake and monitor dehydration symptoms."
+    },
+
+    {
+      "symptoms": [
+        "headache",
+        "dizziness"
+      ],
+      "condition": "Possible dehydration or stress-related issue",
+      "severity": "low",
+      "score_bonus": 1,
+      "emergency": false,
+      "advice": "Rest properly and drink enough water."
+    },
+
+    {
+      "symptoms": [
+        "fatigue",
+        "depression"
+      ],
+      "condition": "Possible stress, burnout, or mood-related condition",
+      "severity": "medium",
+      "score_bonus": 2,
+      "emergency": false,
+      "advice": "Consider consulting a mental health professional."
+    },
+
+    {
+      "symptoms": [
+        "runny nose",
+        "cough"
+      ],
+      "condition": "Possible common cold or allergy",
+      "severity": "low",
+      "score_bonus": 1,
+      "emergency": false,
+      "advice": "Rest well and monitor if symptoms worsen."
+    }
+  ]
+}
